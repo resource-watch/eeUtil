@@ -32,7 +32,7 @@ setuptools.setup(
     long_description_content_type="text/markdown",
     packages=[envstring("NAME")],
     install_requires=[
-        'earthengine-api=0.1.153',
+        'earthengine-api==0.1.153',
         'google-cloud-storage'
     ],
     classifiers=[
