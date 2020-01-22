@@ -31,6 +31,20 @@ cd eeUtil
 pip install -e .
 ```
 
+Or with docker and docker compose thanks to (pyshipper)[https://github.com/LINKIT-Group/pyshipper]
+
+```
+git clone https://github.com/resource-watch/eeUtil.git
+cd eeUtil
+make shell
+
+## inside the container run where you are testing the 
+python test.py
+
+## to exit the container run
+exit
+```
+
 ### Nice things?
 
 - More consistent python bindings
