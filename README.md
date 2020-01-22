@@ -21,12 +21,12 @@ eu.ls('mycollection')
 
 __Install__
 
-`pip install -e git+https://github.com/fgassert/eeUtil.git#egg=eeUtil`
+`pip install -e git+https://github.com/resource-watch/eeUtil.git#egg=eeUtil`
 
 __Develop__
 
 ```
-git clone https://github.com/fgassert/eeUtil.git
+git clone https://github.com/resource-watch/eeUtil.git
 cd eeUtil
 pip install -e .
 ```

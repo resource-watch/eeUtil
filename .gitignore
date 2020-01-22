@@ -4,3 +4,9 @@
 .DS_Store
 *.py[c|o]
 /ncredentials.json
+build/
+dist/
+*.egg-info
+*.swp
+*.pyc
+__pycache__

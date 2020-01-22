@@ -1,0 +1,7 @@
+SLUG=eeutil
+NAME=eeUtil
+VERSION=0.2
+AUTHOR="WRI"
+AUTHOR_EMAIL="--"
+DESCRIPTION="Python wrapper for easier data management on Google Earth Engine."
+URL="https://github.com/resource-watch/eeUtil"

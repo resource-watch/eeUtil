@@ -29,7 +29,6 @@ import time
 import datetime
 import json
 from google.cloud import storage
-
 STRICT = True
 
 GEE_JSON = os.environ.get("GEE_JSON")
