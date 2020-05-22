@@ -1,2 +1,2 @@
-earthengine-api==0.1.153
+earthengine-api==0.1.222
 google-cloud-storage==1.25.0
