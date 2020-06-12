@@ -356,7 +356,7 @@ def gsStage(files, prefix=''):
         raise Exception('GS Bucket not initialized, run init()')
     gs_uris = []
     for f in files:
-        path = '{}/{}'(prefix, os.path.basename(f))
+        path = '{}/{}'.format(prefix, os.path.basename(f))
         uri = 'gs://{}/{}'.format(_gsBucket.name, path)
         logging.debug('Uploading {} to {}'.format(f, uri))
         _gsBucket.blob(path).upload_from_filename(f)
