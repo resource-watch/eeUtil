@@ -3,7 +3,7 @@
 *~
 .DS_Store
 *.py[c|o]
-/ncredentials.json
+credentials.json
 build/
 dist/
 *.egg-info
