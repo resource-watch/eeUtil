@@ -31,7 +31,7 @@ cd eeUtil
 pip install -e .
 ```
 
-Or with docker and docker compose thanks to (pyshipper)[https://github.com/LINKIT-Group/pyshipper]
+Or with docker and docker compose thanks to [pyshipper](https://github.com/LINKIT-Group/pyshipper)
 
 ```
 git clone https://github.com/resource-watch/eeUtil.git

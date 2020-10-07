@@ -44,7 +44,19 @@ export HOST_UID
 
 
 
-.PHONY: shell 
+.PHONY: install shell test help 
+
+default: help 
+help:
+	@echo "Available commands:"
+	@sed -n '/^[a-zA-Z0-9_.]*:/s/:.*//p' <Makefile | sort
+
+install:
+	pip install -e .
+
+test:
+	py.test -v
+
 shell:
 	$(RUN_DOCK) "cd ~/$(MODULE_NAME) \
 		&& ([ -d "$(MODULE_NAME)" ] || ln -sf module "$(MODULE_NAME)") \
