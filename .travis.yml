@@ -1,0 +1,11 @@
+language: python
+python:
+  - "3.6"
+cache: pip
+install:
+  - pip install sphinx travis-sphinx sphinx_rtd_theme sphinxcontrib-inlinesyntaxhighlight tox-travis
+script:
+  - echo -e "$GEE_JSON" | base64 -d > privatekey.json
+  - tox
+after_success:
+  - codecov
