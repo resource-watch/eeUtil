@@ -32,8 +32,8 @@ setuptools.setup(
     long_description_content_type="text/markdown",
     packages=[envstring("NAME")],
     install_requires=[
-        'earthengine-api==0.1.153',
-        'google-cloud-storage'
+        'earthengine-api==0.1.236',
+        'google-cloud-storage==1.31.2'
     ],
     classifiers=[
         "Operating System :: POSIX :: Linux",
