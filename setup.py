@@ -33,6 +33,7 @@ setuptools.setup(
     packages=[envstring("NAME")],
     install_requires=[
         'oauth2client==3.0.0',
+        'oauth2client==3.0.0'
         'earthengine-api==0.1.236',
         'google-cloud-storage==1.31.2'
     ],
