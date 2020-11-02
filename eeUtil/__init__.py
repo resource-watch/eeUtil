@@ -220,7 +220,7 @@ def waitForTasks(task_ids, timeout=300):
         if all(finished):
             return True
         time.sleep(5)
-    logging.error('Tasks timed out after {} seconds'.format(timeout))
+    logging.info('Tasks timed out after {} seconds'.format(timeout))
     if STRICT:
         raise Exception(task_ids)
     return False
@@ -236,7 +236,7 @@ def waitForTask(task_id, timeout=300):
         if finished:
             return True
         time.sleep(5)
-    logging.error('Task timed out after {} seconds'.format(timeout))
+    logging.info('Task timed out after {} seconds'.format(timeout))
     if STRICT:
         raise Exception(task_id)
     return False
