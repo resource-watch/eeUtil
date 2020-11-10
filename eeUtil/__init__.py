@@ -268,8 +268,8 @@ def ingestAsset(gs_uri, asset, date='', wait_timeout=0, bands=[]):
     params = {'id': _path(asset),
               'tilesets': [{'sources': [{'primaryPath': gs_uri}]}]}
     if date:
-        params['properties'] = {'time_start': formatDate(date),
-                                'time_end': formatDate(date)}
+        params['properties'] = {'system:time_start': formatDate(date),
+                                'system:time_end': formatDate(date)}
     if bands:
         if isinstance(bands[0], str):
             bands = [{'id': b} for b in bands]
