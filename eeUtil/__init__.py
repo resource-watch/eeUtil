@@ -29,7 +29,7 @@ import time
 import datetime
 import json
 from google.cloud import storage
-STRICT = True
+STRICT = False
 
 GEE_JSON = os.environ.get("GEE_JSON")
 _CREDENTIAL_FILE = 'credentials.json'
