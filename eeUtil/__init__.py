@@ -277,9 +277,9 @@ def ingestAsset(gs_uri, asset, date='', wait_timeout=0, bands=[]):
     task_id = ee.data.newTaskId()[0]
     logging.debug('Ingesting {} to {}: {}'.format(gs_uri, asset, task_id))
     logging.info(f'Ingestion params: {params}')
-    ee.data.startIngestion(task_id, params, True)
+    task = ee.data.startIngestion(task_id, params, True)
     if wait_timeout:
-        waitForTask(task_id, wait_timeout)
+        waitForTask(task['id'], wait_timeout)
     return task_id
 
 
