@@ -280,7 +280,7 @@ def ingestAsset(gs_uri, asset, date='', wait_timeout=0, bands=[]):
     task = ee.data.startIngestion(task_id, params, True)
     if wait_timeout:
         waitForTask(task['id'], wait_timeout)
-    return task_id
+    return task['id']
 
 
 def uploadAsset(filename, asset, gs_prefix='', date='', public=False,
